@@ -6,18 +6,11 @@
 
 ## ✈️ &nbsp;itinerary
 
-```mermaid
-flowchart LR
-    I([idea]) --> K[sketch]
-    K --> B{build}
-    B --> W["web &#183; ts / react / next"]
-    B --> M["mobile &#183; swift / kotlin"]
-    B --> A["api &#183; go / node"]
-    W --> S([shipped])
-    M --> S
-    A --> S
-    S -.->|learn, then again| I
-```
+<div align="center">
+
+<img src="./assets/routemap.svg" alt="Route map: idea to sketch to build, branching into web, mobile and api, arriving at shipped, then looping back" width="880">
+
+</div>
 
 ## 🧳 &nbsp;cabin baggage
 

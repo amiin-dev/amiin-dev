@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="266" viewBox="0 0 880 266" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Route map: idea to sketch to build, branching into web, mobile and api, arriving at shipped, then looping back to idea">
+  <defs>
+    <style>
+      .leg { fill: none; stroke: #f97316; stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 7 9; animation: fly 1.4s linear infinite; }
+      .branch { fill: none; stroke: #7c8794; stroke-width: 1.8; stroke-linecap: round; stroke-dasharray: 5 7; animation: fly 2s linear infinite; }
+      .loop { fill: none; stroke: #0b2545; stroke-width: 1.6; stroke-dasharray: 2 7; stroke-linecap: round; opacity: .55; animation: fly 3s linear infinite reverse; }
+      @keyframes fly { to { stroke-dashoffset: -16 } }
+      @media (prefers-reduced-motion: reduce) { .leg, .branch, .loop { animation: none } }
+    </style>
+  </defs>
+
+  <rect x=".75" y=".75" width="878.5" height="264.5" rx="14" fill="#fbfcfd" stroke="#c9d3de" stroke-width="1.5"/>
+  <g stroke-width="1">
+      <line x1="60" y1="14" x2="60" y2="236" stroke="#e9eef4"/>
+      <line x1="120" y1="14" x2="120" y2="236" stroke="#e9eef4"/>
+      <line x1="180" y1="14" x2="180" y2="236" stroke="#e9eef4"/>
+      <line x1="240" y1="14" x2="240" y2="236" stroke="#e9eef4"/>
+      <line x1="300" y1="14" x2="300" y2="236" stroke="#e9eef4"/>
+      <line x1="360" y1="14" x2="360" y2="236" stroke="#e9eef4"/>
+      <line x1="420" y1="14" x2="420" y2="236" stroke="#e9eef4"/>
+      <line x1="480" y1="14" x2="480" y2="236" stroke="#e9eef4"/>
+      <line x1="540" y1="14" x2="540" y2="236" stroke="#e9eef4"/>
+      <line x1="600" y1="14" x2="600" y2="236" stroke="#e9eef4"/>
+      <line x1="660" y1="14" x2="660" y2="236" stroke="#e9eef4"/>
+      <line x1="720" y1="14" x2="720" y2="236" stroke="#e9eef4"/>
+      <line x1="780" y1="14" x2="780" y2="236" stroke="#e9eef4"/>
+      <line x1="840" y1="14" x2="840" y2="236" stroke="#e9eef4"/>
+      <line x1="14" y1="50" x2="866" y2="50" stroke="#e9eef4"/>
+      <line x1="14" y1="90" x2="866" y2="90" stroke="#e9eef4"/>
+      <line x1="14" y1="130" x2="866" y2="130" stroke="#e9eef4"/>
+      <line x1="14" y1="170" x2="866" y2="170" stroke="#e9eef4"/>
+      <line x1="14" y1="210" x2="866" y2="210" stroke="#e9eef4"/>
+  </g>
+
+  <text x="28" y="36" font-size="11" font-weight="700" letter-spacing="3.2" fill="#0b2545">ROUTE MAP</text>
+  <text x="852" y="36" font-size="11" font-weight="700" letter-spacing="2.4" fill="#8b95a1" text-anchor="end">AM 2021 &#183; DAILY &#183; NONSTOP-ISH</text>
+
+  <path class="leg" d="M92,168 Q170,110 250,120"/>
+  <path class="leg" d="M250,120 Q336,132 416,168"/>
+  <path class="branch" d="M416,168 C500,168 530,84 612,84"/>
+  <path class="branch" d="M416,168 C500,168 530,150 612,150"/>
+  <path class="branch" d="M416,168 C500,168 530,216 612,216"/>
+  <path class="branch" d="M612,84 C690,84 720,150 790,150"/>
+  <path class="branch" d="M612,150 H790"/>
+  <path class="branch" d="M612,216 C690,216 720,150 790,150"/>
+  <path class="loop" d="M790,150 C800,48 300,26 92,168"/>
+  <text x="430" y="52" font-size="11" font-style="italic" fill="#8b95a1" text-anchor="middle">learn, then fly it again</text>
+
+    <circle cx="92" cy="168" r="8" fill="#f97316"/><circle cx="92" cy="168" r="12" fill="none" stroke="#f97316" stroke-opacity=".28"/><text x="92" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#10151c" letter-spacing="1">IDA</text><text x="92" y="196" text-anchor="middle" font-size="10.5" fill="#7c8794">idea</text>
+  <circle cx="250" cy="120" r="5.5" fill="#0b2545"/><circle cx="250" cy="120" r="9.5" fill="none" stroke="#0b2545" stroke-opacity=".28"/><text x="250" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#10151c" letter-spacing="1">DSN</text><text x="250" y="148" text-anchor="middle" font-size="10.5" fill="#7c8794">sketch</text>
+  <circle cx="416" cy="168" r="8" fill="#0b2545"/><circle cx="416" cy="168" r="12" fill="none" stroke="#0b2545" stroke-opacity=".28"/><text x="416" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#10151c" letter-spacing="1">BLD</text><text x="416" y="196" text-anchor="middle" font-size="10.5" fill="#7c8794">build</text>
+  <circle cx="612" cy="84" r="5.5" fill="#0b2545"/><circle cx="612" cy="84" r="9.5" fill="none" stroke="#0b2545" stroke-opacity=".28"/><text x="612" y="64" text-anchor="middle" font-size="14" font-weight="700" fill="#10151c" letter-spacing="1">WEB</text><text x="612" y="112" text-anchor="middle" font-size="10.5" fill="#7c8794">ts / react / next</text>
+  <circle cx="612" cy="150" r="5.5" fill="#0b2545"/><circle cx="612" cy="150" r="9.5" fill="none" stroke="#0b2545" stroke-opacity=".28"/><text x="612" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#10151c" letter-spacing="1">MOB</text><text x="612" y="178" text-anchor="middle" font-size="10.5" fill="#7c8794">swift / kotlin</text>
+  <circle cx="612" cy="216" r="5.5" fill="#0b2545"/><circle cx="612" cy="216" r="9.5" fill="none" stroke="#0b2545" stroke-opacity=".28"/><text x="612" y="196" text-anchor="middle" font-size="14" font-weight="700" fill="#10151c" letter-spacing="1">API</text><text x="612" y="244" text-anchor="middle" font-size="10.5" fill="#7c8794">go / node</text>
+  <circle cx="790" cy="150" r="8" fill="#f97316"/><circle cx="790" cy="150" r="12" fill="none" stroke="#f97316" stroke-opacity=".28"/><text x="790" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#10151c" letter-spacing="1">SHP</text><text x="790" y="178" text-anchor="middle" font-size="10.5" fill="#7c8794">shipped</text>
+</svg>
