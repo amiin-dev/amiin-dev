@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 880 300" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Boarding pass: passenger Mohamed Amiin, class full-stack, from IDEA to SHIPPED">
+  <defs>
+    <clipPath id="ticket"><path d="M 15,1 H 648 A 12,12 0 0 1 672,1 H 865 A 14,14 0 0 1 879,15 V 285 A 14,14 0 0 1 865,299 H 672 A 12,12 0 0 1 648,299 H 15 A 14,14 0 0 1 1,285 V 15 A 14,14 0 0 1 15,1 Z"/></clipPath>
+    <path id="route" d="M132,116 Q322,62 512,116"/>
+    <style>
+      .dashes { stroke-dasharray: 7 9; animation: fly 1.4s linear infinite; }
+      @keyframes fly { to { stroke-dashoffset: -16 } }
+      @media (prefers-reduced-motion: reduce) { .dashes { animation: none } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#ticket)">
+    <rect width="880" height="300" fill="#fbfcfd"/>
+    <rect width="880" height="56" fill="#0b2545"/>
+    <rect x="660" width="220" height="300" fill="#f2f5f8"/>
+    <rect x="660" width="220" height="56" fill="#0b2545"/>
+  </g>
+  <path d="M 15,1 H 648 A 12,12 0 0 1 672,1 H 865 A 14,14 0 0 1 879,15 V 285 A 14,14 0 0 1 865,299 H 672 A 12,12 0 0 1 648,299 H 15 A 14,14 0 0 1 1,285 V 15 A 14,14 0 0 1 15,1 Z" fill="none" stroke="#c9d3de" stroke-width="1.5"/>
+  <line x1="660" y1="18" x2="660" y2="282" stroke="#c9d3de" stroke-width="1.5" stroke-dasharray="5 6"/>
+
+  <text x="28" y="36" fill="#ffffff" font-size="19" font-weight="700" letter-spacing="4.5">AMIIN AIRWAYS</text>
+  <text x="632" y="35" fill="#7fa4cc" font-size="11" font-weight="600" letter-spacing="3.4" text-anchor="end">BOARDING PASS</text>
+  <text x="852" y="35" fill="#7fa4cc" font-size="11" font-weight="600" letter-spacing="3.4" text-anchor="end">STUB</text>
+
+  <g fill="#6b7785" font-size="9.5" font-weight="700" letter-spacing="1.8">
+    <text x="28" y="88">FROM</text>
+    <text x="548" y="88">TO</text>
+    <text x="28" y="186">PASSENGER</text>
+    <text x="232" y="186">CLASS</text>
+    <text x="392" y="186">FLIGHT</text>
+    <text x="512" y="186">GATE</text>
+    <text x="28" y="230">CARRY-ON</text>
+    <text x="512" y="230">STATUS</text>
+    <text x="684" y="88">FLIGHT</text>
+    <text x="684" y="140">SEAT</text>
+    <text x="792" y="140">BOARDS</text>
+  </g>
+
+  <g fill="#10151c" font-weight="700">
+    <text x="28" y="128" font-size="38" letter-spacing="1">IDA</text>
+    <text x="548" y="128" font-size="38" letter-spacing="1">SHP</text>
+    <text x="28" y="208" font-size="15">MOHAMED AMIIN</text>
+    <text x="232" y="208" font-size="15">FULL-STACK</text>
+    <text x="392" y="208" font-size="15">AM 2021</text>
+    <text x="512" y="208" font-size="15">MAIN</text>
+    <text x="28" y="252" font-size="14" font-weight="500">typescript &#183; swift &#183; kotlin &#183; go &#183; rust</text>
+    <text x="684" y="112" font-size="20">AM 2021</text>
+    <text x="684" y="164" font-size="20">1A</text>
+    <text x="792" y="164" font-size="20">DAILY</text>
+  </g>
+  <text x="512" y="252" font-size="14" font-weight="700" fill="#1a7f37">ON TIME</text>
+
+  <g fill="#8b95a1" font-size="11">
+    <text x="28" y="146">idea</text>
+    <text x="548" y="146">shipped</text>
+  </g>
+
+  <use href="#route" class="dashes" fill="none" stroke="#f97316" stroke-width="2.5" stroke-linecap="round"/>
+  <g fill="#f97316">
+    <path d="M0,-8 L20,0 L0,8 L5,0 Z">
+      <animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#route"/></animateMotion>
+    </path>
+  </g>
+  <circle cx="132" cy="116" r="4" fill="#0b2545"/>
+  <circle cx="512" cy="116" r="4" fill="#0b2545"/>
+
+  <g>
+      <rect x="28" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="36" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="45" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="51" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="56" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="64" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="69" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="75" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="81" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="85" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="91" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="97" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="106" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="112" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="118" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="124" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="132" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="139" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="146" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="152" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="156" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="161" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="168" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="174" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="182" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="189" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="194" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="199" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="205" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="209" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="213" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="220" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="230" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="237" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="242" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="247" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="251" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="260" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="266" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="272" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="279" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="285" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="291" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="297" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="307" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="314" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="319" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="324" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="333" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="340" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="344" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="352" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="359" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="367" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="371" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="377" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="382" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="386" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="390" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="397" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="404" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="410" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="417" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="423" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="433" y="268" width="4" height="22" fill="#10151c"/>
+      <rect x="439" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="443" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="448" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="453" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="462" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="471" y="268" width="3" height="22" fill="#10151c"/>
+      <rect x="478" y="268" width="2" height="22" fill="#10151c"/>
+      <rect x="483" y="268" width="6" height="22" fill="#10151c"/>
+      <rect x="493" y="268" width="3" height="22" fill="#10151c"/>
+  </g>
+  <g>
+      <rect x="684" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="689" y="200" width="6" height="62" fill="#10151c"/>
+      <rect x="698" y="200" width="6" height="62" fill="#10151c"/>
+      <rect x="707" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="713" y="200" width="3" height="62" fill="#10151c"/>
+      <rect x="718" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="722" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="728" y="200" width="4" height="62" fill="#10151c"/>
+      <rect x="736" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="742" y="200" width="4" height="62" fill="#10151c"/>
+      <rect x="750" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="755" y="200" width="6" height="62" fill="#10151c"/>
+      <rect x="765" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="769" y="200" width="3" height="62" fill="#10151c"/>
+      <rect x="776" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="781" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="787" y="200" width="3" height="62" fill="#10151c"/>
+      <rect x="792" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="797" y="200" width="3" height="62" fill="#10151c"/>
+      <rect x="802" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="807" y="200" width="6" height="62" fill="#10151c"/>
+      <rect x="815" y="200" width="3" height="62" fill="#10151c"/>
+      <rect x="820" y="200" width="4" height="62" fill="#10151c"/>
+      <rect x="828" y="200" width="4" height="62" fill="#10151c"/>
+      <rect x="834" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="840" y="200" width="3" height="62" fill="#10151c"/>
+      <rect x="847" y="200" width="2" height="62" fill="#10151c"/>
+      <rect x="852" y="200" width="2" height="62" fill="#10151c"/>
+  </g>
+  <text x="852" y="284" fill="#8b95a1" font-size="9.5" font-weight="700" letter-spacing="1.8" text-anchor="end">NO CHECKED BAGGAGE</text>
+</svg>

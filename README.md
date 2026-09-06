@@ -1,43 +1,59 @@
 <div align="center">
 
-<img src="./assets/terminal.svg" alt="amiin@dev — whoami: Mohamed Amiin, full-stack developer" width="880">
-
-<a href="https://www.linkedin.com/in/mxmdhr/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
-<a href="https://x.com/mxmdahir"><img alt="X" src="https://img.shields.io/badge/X-14171A?style=flat-square&logo=x&logoColor=white"></a>
-<a href="mailto:killavilla79@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
+<img src="./assets/boardingpass.svg" alt="Boarding pass — passenger Mohamed Amiin, class full-stack, from IDEA to SHIPPED" width="880">
 
 </div>
 
----
+## ✈️ &nbsp;itinerary
 
-### `~/stack`
-
-```bash
-$ tree ~/stack --dirsfirst
-.
-├── web/        typescript · react · next.js · node
-├── mobile/     swift · kotlin · flutter
-├── backend/    go · rust · java · c#
-└── tools/      git · docker · figma · the terminal
-
-# 4 directories, 0 frameworks worshipped
+```mermaid
+flowchart LR
+    I([idea]) --> K[sketch]
+    K --> B{build}
+    B --> W["web<br/>ts · react · next"]
+    B --> M["mobile<br/>swift · kotlin"]
+    B --> A["api<br/>go · node"]
+    W --> S([shipped])
+    M --> S
+    A --> S
+    S -. "learn, then again" .-> I
 ```
 
-### `~/now`
+## 🧳 &nbsp;cabin baggage
 
-```diff
-+ building full-stack products, web → mobile → back again
-+ learning in public, shipping small and often
-! most of the good stuff still lives in private repos
-```
+| deck | packed |
+| :--- | :--- |
+| **front** | typescript · react · next.js · tailwind |
+| **mobile** | swift · kotlin · flutter |
+| **back** | go · rust · java · c# · node |
+| **ground crew** | git · docker · figma |
 
-### `~/principles`
+<br>
 
-> Make it work. Make it clean. Then make it look like it was easy.
+<details>
+<summary><b>📢 &nbsp;in-flight announcement</b> &nbsp;<i>(tap to expand)</i></summary>
+
+<br>
+
+Full-stack developer — happiest where the web, mobile and the server meet.
+
+I like small components, boring architectures and interfaces that don't need a manual. Most of my flying happens in private repos, so this profile is quieter than the workload. That'll change as things land.
+
+Currently: building end to end, shipping small, learning loudly.
+
+</details>
+
+## 🛫 &nbsp;departures
+
+| destination | gate | status |
+| :--- | :--- | :--- |
+| linkedin | [`/in/mxmdhr`](https://www.linkedin.com/in/mxmdhr/) | boarding |
+| x | [`@mxmdahir`](https://x.com/mxmdahir) | boarding |
+| inbox | [`killavilla79@gmail.com`](mailto:killavilla79@gmail.com) | always open |
 
 <div align="center">
 <br>
-<sub><i>the terminal above is a hand-written SVG — no third-party services, no trackers, just <code>&lt;rect&gt;</code>s that learned to type</i></sub>
+<sub><i>the pass above is a hand-written SVG — no third-party services, no trackers, just paper that learned to fly</i></sub>
 <br><br>
-<img src="https://komarev.com/ghpvc/?username=amiin-dev&color=1f6feb&style=flat-square&label=visitors" alt="profile views">
+<img src="https://komarev.com/ghpvc/?username=amiin-dev&color=0b2545&style=flat-square&label=passengers%20boarded" alt="profile views">
 </div>
