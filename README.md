@@ -12,15 +12,15 @@
 
 ### `~/stack`
 
-```ansi
-[32m$[0m tree ~/stack --dirsfirst
-[90m.[0m
-[90m├──[0m [36mweb/[0m        typescript · react · next.js · node
-[90m├──[0m [36mmobile/[0m     swift · kotlin · flutter
-[90m├──[0m [36mbackend/[0m    go · rust · java · c#
-[90m└──[0m [36mtools/[0m      git · docker · figma · the terminal
+```bash
+$ tree ~/stack --dirsfirst
+.
+├── web/        typescript · react · next.js · node
+├── mobile/     swift · kotlin · flutter
+├── backend/    go · rust · java · c#
+└── tools/      git · docker · figma · the terminal
 
-[90m4 directories, 0 frameworks worshipped[0m
+# 4 directories, 0 frameworks worshipped
 ```
 
 ### `~/now`
