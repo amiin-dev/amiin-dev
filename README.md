@@ -10,13 +10,13 @@
 flowchart LR
     I([idea]) --> K[sketch]
     K --> B{build}
-    B --> W["web<br/>ts · react · next"]
-    B --> M["mobile<br/>swift · kotlin"]
-    B --> A["api<br/>go · node"]
+    B --> W["web &#183; ts / react / next"]
+    B --> M["mobile &#183; swift / kotlin"]
+    B --> A["api &#183; go / node"]
     W --> S([shipped])
     M --> S
     A --> S
-    S -. "learn, then again" .-> I
+    S -.->|learn, then again| I
 ```
 
 ## 🧳 &nbsp;cabin baggage
