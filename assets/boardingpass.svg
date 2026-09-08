@@ -41,11 +41,13 @@
     <text x="548" y="128" font-size="38" letter-spacing="1">SHP</text>
     <text x="28" y="208" font-size="15">MOHAMED AMIN</text>
     <text x="232" y="208" font-size="15">FULL-STACK</text>
-    <text x="392" y="208" font-size="15">AM 2021</text>
-    <text x="512" y="208" font-size="15">MAIN</text>
+<text x="392" y="208" font-size="15">
+  AM <tspan class="current-year"></tspan>
+</text>    <text x="512" y="208" font-size="15">MAIN</text>
     <text x="28" y="252" font-size="14" font-weight="500">typescript &#183; expo &#183; express &#183; go &#183; nest</text>
-    <text x="684" y="112" font-size="20">AM 2021</text>
-    <text x="684" y="164" font-size="20">1A</text>
+<text x="684" y="112" font-size="20">
+  AM <tspan class="current-year"></tspan>
+</text>    <text x="684" y="164" font-size="20">1A</text>
     <text x="792" y="164" font-size="20">DAILY</text>
   </g>
   <text x="512" y="252" font-size="14" font-weight="700" fill="#1a7f37">ON TIME</text>
@@ -171,4 +173,13 @@
       <rect x="852" y="200" width="2" height="62" fill="#10151c"/>
   </g>
   <text x="852" y="284" fill="#8b95a1" font-size="9.5" font-weight="700" letter-spacing="1.8" text-anchor="end">NO CHECKED BAGGAGE</text>
+  <script type="application/ecmascript">
+  <![CDATA[
+    const year = new Date().getFullYear();
+
+    document.querySelectorAll('.current-year').forEach(function (element) {
+      element.textContent = year;
+    });
+  ]]>
+</script>
 </svg>
