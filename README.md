@@ -17,7 +17,7 @@
 | deck | packed |
 | :--- | :--- |
 | **front** | typescript · react · next.js · astro |
-| **mobile** | expo |
+| **mobile** | react native |
 | **back** | go · php · nest.js · express.js |
 | **ground crew** | git · docker · figma |
 
