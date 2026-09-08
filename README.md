@@ -16,9 +16,9 @@
 
 | deck | packed |
 | :--- | :--- |
-| **front** | typescript · react · next.js · tailwind |
-| **mobile** | swift · kotlin · flutter |
-| **back** | go · rust · java · c# · node |
+| **front** | typescript · react · next.js · astro |
+| **mobile** | expo |
+| **back** | go · php · nest.js · express.js |
 | **ground crew** | git · docker · figma |
 
 <br>
@@ -30,7 +30,7 @@
 
 Full-stack developer — happiest where the web, mobile and the server meet.
 
-I like small components, boring architectures and interfaces that don't need a manual. Most of my flying happens in private repos, so this profile is quieter than the workload. That'll change as things land.
+I like small components, boring architectures and interfaces that don't need a manual. Most of my flying happens in private repos while i sometimes contribute to opensource ones too, so this profile is quieter than the workload. That'll change as things land. building in public is the way!
 
 Currently: building end to end, shipping small, learning loudly.
 
@@ -42,7 +42,7 @@ Currently: building end to end, shipping small, learning loudly.
 | :--- | :--- | :--- |
 | linkedin | [`/in/mxmdhr`](https://www.linkedin.com/in/mxmdhr/) | boarding |
 | x | [`@mxmdahir`](https://x.com/mxmdahir) | boarding |
-| inbox | [`killavilla79@gmail.com`](mailto:killavilla79@gmail.com) | always open |
+| inbox | [`mohameddahir709@gmail.com`](mailto:mohameddahir709@gmail.com) | always open |
 
 <div align="center">
 <br>
