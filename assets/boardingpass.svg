@@ -1,215 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <svg
   xmlns="http://www.w3.org/2000/svg"
   width="880"
   height="300"
   viewBox="0 0 880 300"
-  font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
   role="img"
-  aria-label="Boarding pass: passenger Mohamed Amiin, class full-stack, from IDEA to SHIPPED"
+  aria-label="Amiin Airways developer boarding pass"
   onload="setCurrentYear()"
 >
 
   <defs>
-    <clipPath id="ticket">
-      <path d="M 15,1 H 648 A 12,12 0 0 1 672,1 H 865 A 14,14 0 0 1 879,15 V 285 A 14,14 0 0 1 865,299 H 672 A 12,12 0 0 1 648,299 H 15 A 14,14 0 0 1 1,285 V 15 A 14,14 0 0 1 15,1 Z"/>
+
+    <!-- Background -->
+    <linearGradient id="ticketBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6f8fb"/>
+    </linearGradient>
+
+    <!-- Header -->
+    <linearGradient id="headerBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#071a33"/>
+      <stop offset="100%" stop-color="#123b68"/>
+    </linearGradient>
+
+    <!-- Orange accent -->
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+
+    <!-- Ticket clipping -->
+    <clipPath id="ticketClip">
+      <rect
+        x="1"
+        y="1"
+        width="878"
+        height="298"
+        rx="18"
+        ry="18"
+      />
     </clipPath>
 
-    <path id="route" d="M132,116 Q322,62 512,116"/>
+    <!-- Shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow
+        dx="0"
+        dy="4"
+        stdDeviation="6"
+        flood-color="#0b2545"
+        flood-opacity="0.14"
+      />
+    </filter>
+
+    <!-- Route -->
+    <path
+      id="route"
+      d="M145,119 Q330,48 520,119"
+    />
 
     <style>
-      .dashes {
-        stroke-dasharray: 7 9;
-        animation: fly 1.4s linear infinite;
+      text {
+        font-family:
+          Inter,
+          "Helvetica Neue",
+          Helvetica,
+          Arial,
+          sans-serif;
       }
 
-      @keyframes fly {
+      .label {
+        fill: #7b8794;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 1.6px;
+      }
+
+      .value {
+        fill: #101828;
+        font-weight: 700;
+      }
+
+      .muted {
+        fill: #98a2b3;
+      }
+
+      .route-line {
+        stroke-dasharray: 7 8;
+        animation: dash 1.3s linear infinite;
+      }
+
+      @keyframes dash {
         to {
-          stroke-dashoffset: -16;
+          stroke-dashoffset: -15;
         }
       }
 
       @media (prefers-reduced-motion: reduce) {
-        .dashes {
+        .route-line {
           animation: none;
         }
       }
     </style>
+
   </defs>
 
-  <!-- Background -->
-  <g clip-path="url(#ticket)">
-    <rect width="880" height="300" fill="#fbfcfd"/>
-    <rect width="880" height="56" fill="#0b2545"/>
-    <rect x="660" width="220" height="300" fill="#f2f5f8"/>
-    <rect x="660" width="220" height="56" fill="#0b2545"/>
-  </g>
-
-  <!-- Ticket border -->
-  <path
-    d="M 15,1 H 648 A 12,12 0 0 1 672,1 H 865 A 14,14 0 0 1 879,15 V 285 A 14,14 0 0 1 865,299 H 672 A 12,12 0 0 1 648,299 H 15 A 14,14 0 0 1 1,285 V 15 A 14,14 0 0 1 15,1 Z"
-    fill="none"
-    stroke="#c9d3de"
-    stroke-width="1.5"
+  <!-- Card shadow -->
+  <rect
+    x="4"
+    y="4"
+    width="872"
+    height="292"
+    rx="18"
+    fill="#ffffff"
+    filter="url(#shadow)"
   />
 
+  <g clip-path="url(#ticketClip)">
+
+    <!-- Main background -->
+    <rect
+      width="880"
+      height="300"
+      fill="url(#ticketBg)"
+    />
+
+    <!-- Stub background -->
+    <rect
+      x="660"
+      y="0"
+      width="220"
+      height="300"
+      fill="#f1f5f9"
+    />
+
+    <!-- Header -->
+    <rect
+      width="880"
+      height="58"
+      fill="url(#headerBg)"
+    />
+
+    <!-- Orange accent -->
+    <rect
+      x="0"
+      y="58"
+      width="880"
+      height="3"
+      fill="url(#accent)"
+    />
+
+  </g>
+
+  <!-- Border -->
+  <rect
+    x="1"
+    y="1"
+    width="878"
+    height="298"
+    rx="18"
+    fill="none"
+    stroke="#d0d9e4"
+    stroke-width="1.4"
+  />
+
+  <!-- Tear line -->
   <line
     x1="660"
-    y1="18"
+    y1="72"
     x2="660"
     y2="282"
-    stroke="#c9d3de"
-    stroke-width="1.5"
+    stroke="#c5ced8"
+    stroke-width="1.4"
     stroke-dasharray="5 6"
   />
 
-  <!-- Header -->
-  <text
-    x="28"
-    y="36"
+  <!-- ====================== -->
+  <!-- HEADER -->
+  <!-- ====================== -->
+
+  <!-- Brand icon -->
+  <circle
+    cx="31"
+    cy="29"
+    r="15"
     fill="#ffffff"
-    font-size="19"
-    font-weight="700"
-    letter-spacing="4.5"
+    fill-opacity="0.1"
+  />
+
+  <path
+    d="M21 29 L40 21 L34 29 L40 37 Z"
+    fill="#fb923c"
+  />
+
+  <text
+    x="55"
+    y="35"
+    fill="#ffffff"
+    font-size="18"
+    font-weight="800"
+    letter-spacing="3.2"
   >
     AMIIN AIRWAYS
   </text>
 
   <text
-    x="632"
-    y="35"
-    fill="#7fa4cc"
-    font-size="11"
-    font-weight="600"
-    letter-spacing="3.4"
+    x="630"
+    y="34"
+    fill="#8fb4da"
+    font-size="10"
+    font-weight="700"
+    letter-spacing="2.7"
     text-anchor="end"
   >
-    BOARDING PASS
+    DEVELOPER BOARDING PASS
   </text>
 
   <text
-    x="852"
-    y="35"
-    fill="#7fa4cc"
-    font-size="11"
-    font-weight="600"
-    letter-spacing="3.4"
+    x="850"
+    y="34"
+    fill="#8fb4da"
+    font-size="10"
+    font-weight="700"
+    letter-spacing="2.7"
     text-anchor="end"
   >
-    STUB
+    FLIGHT STUB
   </text>
 
-  <!-- Labels -->
-  <g
-    fill="#6b7785"
-    font-size="9.5"
-    font-weight="700"
-    letter-spacing="1.8"
-  >
-    <text x="28" y="88">FROM</text>
-    <text x="548" y="88">TO</text>
-    <text x="28" y="186">PASSENGER</text>
-    <text x="232" y="186">CLASS</text>
-    <text x="392" y="186">FLIGHT</text>
-    <text x="512" y="186">GATE</text>
-    <text x="28" y="230">CARRY-ON</text>
-    <text x="512" y="230">STATUS</text>
-    <text x="684" y="88">FLIGHT</text>
-    <text x="684" y="140">SEAT</text>
-    <text x="792" y="140">BOARDS</text>
-  </g>
+  <!-- ====================== -->
+  <!-- ROUTE -->
+  <!-- ====================== -->
 
-  <!-- Main data -->
-  <g fill="#10151c" font-weight="700">
-
-    <text
-      x="28"
-      y="128"
-      font-size="38"
-      letter-spacing="1"
-    >
-      IDA
-    </text>
-
-    <text
-      x="548"
-      y="128"
-      font-size="38"
-      letter-spacing="1"
-    >
-      SHP
-    </text>
-
-    <text x="28" y="208" font-size="15">
-      MOHAMED AMIN
-    </text>
-
-    <text x="232" y="208" font-size="15">
-      FULL-STACK
-    </text>
-
-    <!-- Dynamic year -->
-    <text x="392" y="208" font-size="15">
-      AM <tspan class="current-year">2026</tspan>
-    </text>
-
-    <text x="512" y="208" font-size="15">
-      MAIN
-    </text>
-
-    <text
-      x="28"
-      y="252"
-      font-size="14"
-      font-weight="500"
-    >
-      typescript &#183; expo &#183; express &#183; go &#183; nest
-    </text>
-
-    <!-- Dynamic year -->
-    <text x="684" y="112" font-size="20">
-      AM <tspan class="current-year">2026</tspan>
-    </text>
-
-    <text x="684" y="164" font-size="20">
-      1A
-    </text>
-
-    <text x="792" y="164" font-size="20">
-      DAILY
-    </text>
-  </g>
-
-  <!-- Status -->
   <text
-    x="512"
-    y="252"
-    font-size="14"
-    font-weight="700"
-    fill="#1a7f37"
+    class="label"
+    x="28"
+    y="88"
   >
-    ON TIME
+    FROM
   </text>
 
-  <!-- Airport descriptions -->
-  <g fill="#8b95a1" font-size="11">
-    <text x="28" y="146">idea</text>
-    <text x="548" y="146">shipped</text>
-  </g>
+  <text
+    class="label"
+    x="550"
+    y="88"
+  >
+    TO
+  </text>
 
-  <!-- Route -->
+  <text
+    x="28"
+    y="126"
+    class="value"
+    font-size="38"
+    letter-spacing="1"
+  >
+    IDA
+  </text>
+
+  <text
+    x="550"
+    y="126"
+    class="value"
+    font-size="38"
+    letter-spacing="1"
+  >
+    SHP
+  </text>
+
+  <text
+    x="29"
+    y="145"
+    font-size="11"
+    fill="#98a2b3"
+  >
+    IDEA
+  </text>
+
+  <text
+    x="551"
+    y="145"
+    font-size="11"
+    fill="#98a2b3"
+  >
+    SHIPPED
+  </text>
+
+  <!-- Route line -->
   <use
     href="#route"
-    class="dashes"
     fill="none"
     stroke="#f97316"
-    stroke-width="2.5"
+    stroke-width="2.4"
     stroke-linecap="round"
+    class="route-line"
   />
 
-  <!-- Animated plane -->
+  <!-- Departure -->
+  <circle
+    cx="145"
+    cy="119"
+    r="5"
+    fill="#ffffff"
+    stroke="#0b2545"
+    stroke-width="3"
+  />
+
+  <!-- Destination -->
+  <circle
+    cx="520"
+    cy="119"
+    r="5"
+    fill="#ffffff"
+    stroke="#0b2545"
+    stroke-width="3"
+  />
+
+  <!-- Flying plane -->
   <g fill="#f97316">
-    <path d="M0,-8 L20,0 L0,8 L5,0 Z">
+    <path d="M-4,-7 L17,0 L-4,7 L1,0 Z">
       <animateMotion
         dur="5s"
         repeatCount="indefinite"
@@ -220,142 +329,373 @@
     </path>
   </g>
 
-  <circle cx="132" cy="116" r="4" fill="#0b2545"/>
-  <circle cx="512" cy="116" r="4" fill="#0b2545"/>
+  <!-- ====================== -->
+  <!-- PASSENGER INFORMATION -->
+  <!-- ====================== -->
 
-  <!-- Main barcode -->
-  <g fill="#10151c">
-    <rect x="28" y="268" width="4" height="22"/>
-    <rect x="36" y="268" width="6" height="22"/>
-    <rect x="45" y="268" width="2" height="22"/>
-    <rect x="51" y="268" width="2" height="22"/>
-    <rect x="56" y="268" width="4" height="22"/>
-    <rect x="64" y="268" width="2" height="22"/>
-    <rect x="69" y="268" width="3" height="22"/>
-    <rect x="75" y="268" width="4" height="22"/>
-    <rect x="81" y="268" width="2" height="22"/>
-    <rect x="85" y="268" width="2" height="22"/>
-    <rect x="91" y="268" width="2" height="22"/>
-    <rect x="97" y="268" width="6" height="22"/>
-    <rect x="106" y="268" width="2" height="22"/>
-    <rect x="112" y="268" width="4" height="22"/>
-    <rect x="118" y="268" width="2" height="22"/>
-    <rect x="124" y="268" width="4" height="22"/>
-    <rect x="132" y="268" width="3" height="22"/>
-    <rect x="139" y="268" width="3" height="22"/>
-    <rect x="146" y="268" width="3" height="22"/>
-    <rect x="152" y="268" width="2" height="22"/>
-    <rect x="156" y="268" width="2" height="22"/>
-    <rect x="161" y="268" width="4" height="22"/>
-    <rect x="168" y="268" width="2" height="22"/>
-    <rect x="174" y="268" width="6" height="22"/>
-    <rect x="182" y="268" width="4" height="22"/>
-    <rect x="189" y="268" width="3" height="22"/>
-    <rect x="194" y="268" width="3" height="22"/>
-    <rect x="199" y="268" width="2" height="22"/>
-    <rect x="205" y="268" width="2" height="22"/>
-    <rect x="209" y="268" width="2" height="22"/>
-    <rect x="213" y="268" width="4" height="22"/>
-    <rect x="220" y="268" width="6" height="22"/>
-    <rect x="230" y="268" width="3" height="22"/>
-    <rect x="237" y="268" width="3" height="22"/>
-    <rect x="242" y="268" width="3" height="22"/>
-    <rect x="247" y="268" width="2" height="22"/>
-    <rect x="251" y="268" width="6" height="22"/>
-    <rect x="260" y="268" width="2" height="22"/>
-    <rect x="266" y="268" width="2" height="22"/>
-    <rect x="272" y="268" width="4" height="22"/>
-    <rect x="279" y="268" width="3" height="22"/>
-    <rect x="285" y="268" width="2" height="22"/>
-    <rect x="291" y="268" width="4" height="22"/>
-    <rect x="297" y="268" width="6" height="22"/>
-    <rect x="307" y="268" width="4" height="22"/>
-    <rect x="314" y="268" width="2" height="22"/>
-    <rect x="319" y="268" width="2" height="22"/>
-    <rect x="324" y="268" width="6" height="22"/>
-    <rect x="333" y="268" width="3" height="22"/>
-    <rect x="340" y="268" width="2" height="22"/>
-    <rect x="344" y="268" width="6" height="22"/>
-    <rect x="352" y="268" width="4" height="22"/>
-    <rect x="359" y="268" width="6" height="22"/>
-    <rect x="367" y="268" width="2" height="22"/>
-    <rect x="371" y="268" width="4" height="22"/>
-    <rect x="377" y="268" width="3" height="22"/>
-    <rect x="382" y="268" width="2" height="22"/>
-    <rect x="386" y="268" width="2" height="22"/>
-    <rect x="390" y="268" width="3" height="22"/>
-    <rect x="397" y="268" width="3" height="22"/>
-    <rect x="404" y="268" width="2" height="22"/>
-    <rect x="410" y="268" width="3" height="22"/>
-    <rect x="417" y="268" width="2" height="22"/>
-    <rect x="423" y="268" width="6" height="22"/>
-    <rect x="433" y="268" width="4" height="22"/>
-    <rect x="439" y="268" width="2" height="22"/>
-    <rect x="443" y="268" width="2" height="22"/>
-    <rect x="448" y="268" width="3" height="22"/>
-    <rect x="453" y="268" width="6" height="22"/>
-    <rect x="462" y="268" width="6" height="22"/>
-    <rect x="471" y="268" width="3" height="22"/>
-    <rect x="478" y="268" width="2" height="22"/>
-    <rect x="483" y="268" width="6" height="22"/>
-    <rect x="493" y="268" width="3" height="22"/>
+  <line
+    x1="28"
+    y1="165"
+    x2="630"
+    y2="165"
+    stroke="#e4e9ef"
+  />
+
+  <!-- Passenger -->
+
+  <text class="label" x="28" y="187">
+    PASSENGER
+  </text>
+
+  <text
+    class="value"
+    x="28"
+    y="210"
+    font-size="15"
+  >
+    MOHAMED AMIN
+  </text>
+
+  <!-- Class -->
+
+  <text class="label" x="218" y="187">
+    CLASS
+  </text>
+
+  <text
+    class="value"
+    x="218"
+    y="210"
+    font-size="15"
+  >
+    FULL-STACK
+  </text>
+
+  <!-- Flight -->
+
+  <text class="label" x="384" y="187">
+    FLIGHT
+  </text>
+
+  <text
+    class="value"
+    x="384"
+    y="210"
+    font-size="15"
+  >
+    AM <tspan class="current-year">2026</tspan>
+  </text>
+
+  <!-- Gate -->
+
+  <text class="label" x="510" y="187">
+    GATE
+  </text>
+
+  <text
+    class="value"
+    x="510"
+    y="210"
+    font-size="15"
+  >
+    MAIN
+  </text>
+
+  <!-- ====================== -->
+  <!-- TECH STACK -->
+  <!-- ====================== -->
+
+  <text class="label" x="28" y="238">
+    CARRY-ON
+  </text>
+
+  <!-- Stack pills -->
+
+  <g transform="translate(28 248)">
+
+    <rect
+      width="76"
+      height="26"
+      rx="13"
+      fill="#eef2f7"
+    />
+
+    <text
+      x="38"
+      y="17"
+      text-anchor="middle"
+      font-size="10"
+      font-weight="700"
+      fill="#344054"
+    >
+      TYPESCRIPT
+    </text>
+
   </g>
 
-  <!-- Stub barcode -->
-  <g fill="#10151c">
-    <rect x="684" y="200" width="2" height="62"/>
-    <rect x="689" y="200" width="6" height="62"/>
-    <rect x="698" y="200" width="6" height="62"/>
-    <rect x="707" y="200" width="2" height="62"/>
-    <rect x="713" y="200" width="3" height="62"/>
-    <rect x="718" y="200" width="2" height="62"/>
-    <rect x="722" y="200" width="2" height="62"/>
-    <rect x="728" y="200" width="4" height="62"/>
-    <rect x="736" y="200" width="2" height="62"/>
-    <rect x="742" y="200" width="4" height="62"/>
-    <rect x="750" y="200" width="2" height="62"/>
-    <rect x="755" y="200" width="6" height="62"/>
-    <rect x="765" y="200" width="2" height="62"/>
-    <rect x="769" y="200" width="3" height="62"/>
-    <rect x="776" y="200" width="2" height="62"/>
-    <rect x="781" y="200" width="2" height="62"/>
-    <rect x="787" y="200" width="3" height="62"/>
-    <rect x="792" y="200" width="2" height="62"/>
-    <rect x="797" y="200" width="3" height="62"/>
-    <rect x="802" y="200" width="2" height="62"/>
-    <rect x="807" y="200" width="6" height="62"/>
-    <rect x="815" y="200" width="3" height="62"/>
-    <rect x="820" y="200" width="4" height="62"/>
-    <rect x="828" y="200" width="4" height="62"/>
-    <rect x="834" y="200" width="2" height="62"/>
-    <rect x="840" y="200" width="3" height="62"/>
-    <rect x="847" y="200" width="2" height="62"/>
-    <rect x="852" y="200" width="2" height="62"/>
+  <g transform="translate(111 248)">
+
+    <rect
+      width="52"
+      height="26"
+      rx="13"
+      fill="#eef2f7"
+    />
+
+    <text
+      x="26"
+      y="17"
+      text-anchor="middle"
+      font-size="10"
+      font-weight="700"
+      fill="#344054"
+    >
+      EXPO
+    </text>
+
+  </g>
+
+  <g transform="translate(170 248)">
+
+    <rect
+      width="69"
+      height="26"
+      rx="13"
+      fill="#eef2f7"
+    />
+
+    <text
+      x="34.5"
+      y="17"
+      text-anchor="middle"
+      font-size="10"
+      font-weight="700"
+      fill="#344054"
+    >
+      EXPRESS
+    </text>
+
+  </g>
+
+  <g transform="translate(246 248)">
+
+    <rect
+      width="44"
+      height="26"
+      rx="13"
+      fill="#eef2f7"
+    />
+
+    <text
+      x="22"
+      y="17"
+      text-anchor="middle"
+      font-size="10"
+      font-weight="700"
+      fill="#344054"
+    >
+      GO
+    </text>
+
+  </g>
+
+  <g transform="translate(297 248)">
+
+    <rect
+      width="54"
+      height="26"
+      rx="13"
+      fill="#eef2f7"
+    />
+
+    <text
+      x="27"
+      y="17"
+      text-anchor="middle"
+      font-size="10"
+      font-weight="700"
+      fill="#344054"
+    >
+      NEST
+    </text>
+
+  </g>
+
+  <!-- ====================== -->
+  <!-- STATUS -->
+  <!-- ====================== -->
+
+  <text class="label" x="500" y="238">
+    STATUS
+  </text>
+
+  <g transform="translate(500 248)">
+
+    <rect
+      width="103"
+      height="27"
+      rx="13.5"
+      fill="#eaf8ee"
+    />
+
+    <circle
+      cx="16"
+      cy="13.5"
+      r="4"
+      fill="#22a447"
+    />
+
+    <text
+      x="29"
+      y="17"
+      font-size="10"
+      font-weight="800"
+      fill="#187b35"
+      letter-spacing=".6"
+    >
+      ON TIME
+    </text>
+
+  </g>
+
+  <!-- ====================== -->
+  <!-- STUB -->
+  <!-- ====================== -->
+
+  <text
+    class="label"
+    x="684"
+    y="91"
+  >
+    FLIGHT
+  </text>
+
+  <text
+    x="684"
+    y="117"
+    class="value"
+    font-size="21"
+  >
+    AM <tspan class="current-year">2026</tspan>
+  </text>
+
+  <!-- Seat -->
+
+  <text
+    class="label"
+    x="684"
+    y="151"
+  >
+    SEAT
+  </text>
+
+  <text
+    class="value"
+    x="684"
+    y="179"
+    font-size="23"
+  >
+    1A
+  </text>
+
+  <!-- Boards -->
+
+  <text
+    class="label"
+    x="788"
+    y="151"
+  >
+    BOARDS
+  </text>
+
+  <text
+    class="value"
+    x="788"
+    y="179"
+    font-size="18"
+  >
+    DAILY
+  </text>
+
+  <!-- Stub separator -->
+
+  <line
+    x1="684"
+    y1="192"
+    x2="852"
+    y2="192"
+    stroke="#d9e0e8"
+  />
+
+  <!-- Barcode -->
+
+  <g
+    fill="#101828"
+    transform="translate(684 208)"
+  >
+
+    <rect x="0" width="2" height="48"/>
+    <rect x="5" width="5" height="48"/>
+    <rect x="13" width="2" height="48"/>
+    <rect x="18" width="6" height="48"/>
+    <rect x="27" width="3" height="48"/>
+    <rect x="34" width="2" height="48"/>
+    <rect x="39" width="5" height="48"/>
+    <rect x="47" width="2" height="48"/>
+    <rect x="53" width="3" height="48"/>
+    <rect x="60" width="6" height="48"/>
+    <rect x="70" width="2" height="48"/>
+    <rect x="75" width="4" height="48"/>
+    <rect x="83" width="2" height="48"/>
+    <rect x="88" width="6" height="48"/>
+    <rect x="98" width="3" height="48"/>
+    <rect x="105" width="2" height="48"/>
+    <rect x="110" width="5" height="48"/>
+    <rect x="119" width="3" height="48"/>
+    <rect x="126" width="6" height="48"/>
+    <rect x="136" width="2" height="48"/>
+    <rect x="141" width="4" height="48"/>
+    <rect x="149" width="2" height="48"/>
+    <rect x="154" width="6" height="48"/>
+    <rect x="164" width="3" height="48"/>
+
   </g>
 
   <text
     x="852"
-    y="284"
-    fill="#8b95a1"
-    font-size="9.5"
-    font-weight="700"
-    letter-spacing="1.8"
+    y="277"
     text-anchor="end"
+    fill="#98a2b3"
+    font-size="8.5"
+    font-weight="700"
+    letter-spacing="1.4"
   >
     NO CHECKED BAGGAGE
   </text>
 
-  <!-- Automatically update year -->
+  <!-- Dynamic current year -->
   <script type="application/ecmascript">
     <![CDATA[
-      function setCurrentYear() {
-        var year = new Date().getFullYear();
-        var elements = document.getElementsByClassName("current-year");
 
-        for (var i = 0; i < elements.length; i++) {
+      function setCurrentYear() {
+
+        var year = new Date().getFullYear();
+
+        var elements =
+          document.getElementsByClassName("current-year");
+
+        for (
+          var i = 0;
+          i < elements.length;
+          i++
+        ) {
+
           elements[i].textContent = year;
+
         }
+
       }
+
     ]]>
   </script>
 
