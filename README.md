@@ -41,7 +41,6 @@ Currently: building end to end, shipping small, learning loudly.
 | destination | gate | status |
 | :--- | :--- | :--- |
 | linkedin | [`/in/mxmdhr`](https://www.linkedin.com/in/mxmdhr/) | boarding |
-| x | [`@mxmdahir`](https://x.com/mxmdahir) | boarding |
 | inbox | [`mohameddahir709@gmail.com`](mailto:mohameddahir709@gmail.com) | always open |
 
 <div align="center">
