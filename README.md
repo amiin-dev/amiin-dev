@@ -1,13 +1,5 @@
 <div align="center">
 
-<a href="https://github.com/amiin-dev"><img src="./assets/readme-banner.svg" alt="Developer profile — animated banner" width="100%"></a>
-
-</div>
-
-## Mohamed Amiin
-
-<div align="center">
-
 <a href="https://github.com/amiin-dev/amiin-dev"><img src="./assets/readme-banner.svg" alt="Developer profile — animated banner" width="100%"></a>
 
 <img src="./assets/boardingpass.svg" alt="Boarding pass — passenger Mohamed Amiin, class full-stack, from IDEA to SHIPPED" width="880">
