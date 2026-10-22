@@ -1,15 +1,10 @@
 <div align="center">
 
+<a href="https://github.com/amiin-dev/amiin-dev"><img src="./assets/readme-banner.svg" alt="Developer profile — animated banner" width="100%"></a>
+
 <img src="./assets/boardingpass.svg" alt="Boarding pass — passenger Mohamed Amiin, class full-stack, from IDEA to SHIPPED" width="880">
 
 </div>
-
-<p align="center">
-  <a href="https://github.com/amiin-dev/amiin-dev"><img src="https://img.shields.io/badge/GitHub-amiin-dev-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub repository"></a>
-  <img src="https://img.shields.io/badge/README-✨%20polished-7C3AED?style=for-the-badge&logo=markdown&logoColor=white" alt="Polished README">
-  <img src="https://img.shields.io/badge/Maintained-by%20Amiin-0B2545?style=for-the-badge&logo=github&logoColor=white" alt="Maintained by Amiin">
-</p>
-
 
 
 ## ✈️ &nbsp;itinerary
